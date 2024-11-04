@@ -68,6 +68,39 @@ main {
     align-items: center;
 }
 
+.botao_pdf {
+    text-decoration: none;
+    display: inline-block;
+}
+
+#btn_pdf {
+    background-color: #ff4b4b; /* Cor de fundo */
+    color: #ffffff; /* Cor do texto */
+    border: none;
+    padding: 10px 20px;
+    font-size: 16px;
+    font-weight: bold;
+    border-radius: 5px;
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+#btn_pdf i {
+    font-size: 18px; /* Ajuste o tamanho do ícone */
+}
+
+#btn_pdf:hover {
+    background-color: #e04343; /* Cor ao passar o mouse */
+    text-decoration: none; /* Remove sublinhado do texto */
+}
+
+.botao_pdf:active #btn_pdf {
+    background-color: #cc3b3b; /* Cor ao clicar */
+}
+
 /* Ajustes para telas menores que 576px */
 @media (max-width: 576px) {
     /* Navbar */
@@ -147,5 +180,10 @@ main {
     /* Footer */
     footer {
         font-size: 12px;
+    }
+
+    .container.cards {
+        display: flex;
+        flex-direction: column;
     }
 }
